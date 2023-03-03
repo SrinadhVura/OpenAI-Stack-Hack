@@ -12,6 +12,7 @@ from streamlit_audio_recorder.st_custom_components import st_audiorec
 from scipy.io.wavfile import write
 import wavio as wv
 import whisper
+import numpy as np
 def main():
     openai.api_key = st.secrets['OPEN_AI_KEY']
     st.set_page_config(layout="centered")
@@ -45,7 +46,7 @@ def main():
             time.sleep(10)
             if wav_audio_data is not None:
                 # display audio data as received on the backend
-                text=model.transcribe(st.audio(wav_audio_data, format='audio/wav'))
+                text=model.transcribe(st.audio(np.array(wav_audio_data), format='audio/wav'))
 
         
         submit = st.button("Generate the preventive measures")
