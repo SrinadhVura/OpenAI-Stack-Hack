@@ -1,4 +1,4 @@
-# OpenAI-Stack-Hack
+# OpenAI-Stack-Hack Challenge
 ![MEDIFIX](https://user-images.githubusercontent.com/67108072/222713368-83369852-83dc-4205-afe8-a86545b15720.png)
 
 This project is a part of the OpenAI Hackthon Feb 2023. This 7-day virtual hackathon made students to Create innovative new apps with OpenAI's latest AI tools.
