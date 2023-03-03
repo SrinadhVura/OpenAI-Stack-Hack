@@ -57,6 +57,7 @@ def main():
                     messages=[{"role": "user", "content": "What are the preventive measures for symptoms "+kw+" ?"}]
                 )
                 res=response.choices[0].message["content"] 
+                
                 myobj = gTTS(text=res,lang='en', slow=False, tld="co.uk")
                 mp3_play=BytesIO()
                 myobj.write_to_fp(mp3_play)
