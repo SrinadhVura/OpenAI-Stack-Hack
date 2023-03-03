@@ -40,7 +40,7 @@ def main():
     else :
         model=whisper.load_model("base")
         rec=st.button("Record the symptoms")
-        st.markdown("Please don't use the stop button, it terminates the process abruptly")
+        st.markdown("Please don't use the stop button, it terminates the process abruptly\nWait for the 'generate preventive measures' button to appear and click it")
         text=""
         if rec:
             wav_audio_data = st_audiorec()
