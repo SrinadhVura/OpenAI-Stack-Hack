@@ -1,9 +1,0 @@
-openai==0.27.0
-openai-whisper==20230124
-streamlit==1.17.0
-streamlit-player==0.1.5
-gTTS==2.3.1
-python-dotenv==0.21.1
-wavio==0.0.7
-scipy==1.9.1
-git+git://github.com/stefanrmmr/streamlit_audio_recorder.git
