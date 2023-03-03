@@ -26,7 +26,7 @@ def main():
             if submit:
                 response = openai.ChatCompletion.create(
                     model="gpt-3.5-turbo", 
-                    messages=[{"role": "user", "content": "What are the preventive measures for symptoms "+text+" ?"}]
+                    messages=[{"role": "user", "content": "What are the preventive measures for symptoms "+kw+" ?"}]
                 )
                 res=response.choices[0].message["content"]          
                 myobj = gTTS(text=res,lang='en', slow=False, tld="co.uk")
