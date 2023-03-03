@@ -1,5 +1,6 @@
 import os
 import openai
+import time
 from io import BytesIO
 from gtts import gTTS
 from streamlit.web import cli as stcli
