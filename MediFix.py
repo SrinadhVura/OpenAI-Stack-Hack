@@ -40,13 +40,14 @@ def main():
     else :
         model=whisper.load_model("base")
         rec=st.button("Record the symptoms")
+        st.markdown("Please don't use the stop button, it terminates the process abruptly")
         text=""
         if rec:
             wav_audio_data = st_audiorec()
             time.sleep(10)
             if wav_audio_data is not None:
                 # display audio data as received on the backend
-                text=model.transcribe(st.audio(np.array(wav_audio_data), format='audio/wav'))
+                text=model.transcribe(st.audio(wav_audio_data, format='audio/wav'))
 
         
         submit = st.button("Generate the preventive measures")
