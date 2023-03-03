@@ -52,16 +52,11 @@ def main():
         
         submit = st.button("Generate the preventive measures")
         if submit:
-                response = openai.Completion.create(
-                model="text-davinci-003",
-                prompt="What are the preventive measures for symptoms "+text+" ?",
-                temperature=0.7,
-                max_tokens=256,
-                top_p=1,
-                frequency_penalty=0,
-                presence_penalty=0
+                 response = openai.ChatCompletion.create(
+                    model="gpt-3.5-turbo", 
+                    messages=[{"role": "user", "content": "What are the preventive measures for symptoms "+kw+" ?"}]
                 )
-                res=response["choices"][0]["text"]
+                res=response.choices[0].message["content"] 
                 myobj = gTTS(text=res,lang='en', slow=False, tld="co.uk")
                 mp3_play=BytesIO()
                 myobj.write_to_fp(mp3_play)
