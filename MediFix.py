@@ -52,12 +52,11 @@ def main():
         
         submit = st.button("Generate the preventive measures")
         if submit:
-                 response = openai.ChatCompletion.create(
+                response = openai.ChatCompletion.create(
                     model="gpt-3.5-turbo", 
-                    messages=[{"role": "user", "content": "What are the preventive measures for symptoms "+kw+" ?"}]
+                    messages=[{"role": "user", "content": "What are the preventive measures for symptoms "+text+" ?"}]
                 )
-                res=response.choices[0].message["content"] 
-                
+                res=response.choices[0].message["content"]
                 myobj = gTTS(text=res,lang='en', slow=False, tld="co.uk")
                 mp3_play=BytesIO()
                 myobj.write_to_fp(mp3_play)
