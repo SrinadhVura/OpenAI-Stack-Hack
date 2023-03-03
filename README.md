@@ -28,8 +28,11 @@ Gayatri Vadaparty
 
 Srinadh Vura
 
-## How to run the code?
+
+### How to run the code?
+```
 streamlit run filename.py
+```
 Type this in command prompt and you can see the localhost opened for interface.
 
 ## Deployed app
