@@ -6,3 +6,4 @@ gTTS==2.3.1
 python-dotenv==0.21.1
 wavio==0.0.7
 scipy==1.9.1
+numpy==1.23.3
