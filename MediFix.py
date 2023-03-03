@@ -7,7 +7,7 @@ from streamlit import runtime
 import streamlit as st
 from dotenv import load_dotenv
 import streamlit.components.v1 as components
-from streamlit_audio_recorder_main.st_custom_components import st_audiorec
+from streamlit_audio_recorder.st_custom_components import st_audiorec
 from scipy.io.wavfile import write
 import wavio as wv
 import whisper
