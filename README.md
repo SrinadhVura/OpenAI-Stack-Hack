@@ -36,4 +36,4 @@ streamlit run filename.py
 Type this in command prompt and you can see the localhost opened for interface.
 
 ## Deployed app
-Click here to view a demo 
+Click here to view a demo https://srinadhvura-openai-stack-hack-medifix-f0a1gm.streamlit.app/
