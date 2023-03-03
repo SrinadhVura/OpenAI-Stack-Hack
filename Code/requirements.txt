@@ -6,3 +6,4 @@ gTTS==2.3.1
 python-dotenv==0.21.1
 wavio==0.0.7
 scipy==1.9.1
+git+https://github.com/SrinadhVura/OpenAI-Stack-Hack/tree/main/streamlit_audio_recorder-main
